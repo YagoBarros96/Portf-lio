@@ -1,15 +1,15 @@
 # Portfólio
 
-Sobre um Portfólio do desenvolvedor
+Sobre o Portfólio do desenvolvedor
 
 ## Tarefas
 
-O controle das tarefas desse projeto será realizado no GitHub
+O controle das tarefas desse projeto será realizado no GitHub, tasks disponibilizadas:
 
 
 ## Icones
 
-:package: Nova funcionade
+:package: Nova funcionalidade
 
 :up: Atualização
 
