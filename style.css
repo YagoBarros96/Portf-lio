@@ -39,10 +39,9 @@ header{
 
 .banner{
     position: absolute;
-    left: 15%;
-    right: ;
-    top: 10%;
-    bottom: ;
+    left: 8%;
+    top: 30%;
+    
 }
 
 .banner h1{
@@ -61,7 +60,7 @@ header{
     font-family: "Josefin Slab",serif;
     color: #fff;
     font-size: 2.5rem;
-    text-shadow: .2rem .2rem  rgba(0,0,0,0.4);
+    text-shadow: .1rem .1rem  rgba(0,0,0,0.4);
     margin-bottom: 2rem;   
     opacity: 0;
     animation: moveBanner 1s 0.7s forwards;
@@ -72,10 +71,10 @@ header{
     color: #fff;
     text-transform: uppercase;
     letter-spacing: .1rem;
-    background: #8E2DE2;
-    background: -webkit-linear-gradient(to left, #4A00E0, #8E2DE2);  
+    background: #400079;
+    background: -webkit-linear-gradient(to left, #4A00E0, #30db0d);  
     background: linear-gradient(to left, #4A00E0, #8E2DE2);
-    padding: 1rem 3rem;
+    padding: 1rem 2rem;
     opacity: 0;
     border: none;
     border-radius: 8px;
