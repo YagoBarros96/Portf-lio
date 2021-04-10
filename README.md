@@ -9,10 +9,10 @@ O controle das tarefas desse projeto será realizado no GitHub, tasks disponibil
 
 ## Icones
 
-:package: Nova funcionalidade
+- :package: Nova funcionalidade
 
-:up: Atualização
+- :up: Atualização
 
-:beatle: Correção de bug
+- :beetle: Correção de bug
 
-:checkered_flag: Release
+- :checkered_flag: Release
