@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=Josefin+Slab:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Black+Ops+One&family=Bungee+Shade&family=Caveat+Brush&family=Frijole&family=Indie+Flower&family=Lustria&display=swap');
+
+
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
 
 * {
@@ -11,8 +16,15 @@
 
 :root{
     --font-primary: "Baloo Da 2", serif;
-    --font-secundary: "Josefin Slab" serif;
-    --font-action: "Mulish",serif;
+    --font-secundary: "Josefin Slab", serif;
+    --font-action: "Mulish",serif; 
+    --font-alternative: "Allerta Stencil", serif;
+    --font-alternative1: "Black Ops One", serif;
+    --font-alternative2: "Bungee Shade", serif;
+    --font-alternative3: "Caveat Brush", serif;
+    --font-alternative4: "Frijole", serif;
+    --font-alternative5: "Indie Flower", serif;
+    --font-alternative6: "Lustria", serif;   
 }
 
 .hamburguer{
@@ -96,14 +108,21 @@ header{
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background-color: rgba(0,0,0,0.7)
+    background-color: rgba(14, 13, 13, 0.952);
+    position: relative;
+    
 }
 
 .img-wrapper img{
-    width: 100%;
-    height: 100%;
+    width: 6%;
+    height: 8%;
     opacity: 0.5;
     animation: zoom 25s;
+    position: absolute;
+    left: 32rem;
+    top: 17.3rem;
+    opacity: 0;
+    animation: moveBanner 1s 0.5s forwards;
 }
 
 @keyframes zoom {
@@ -122,11 +141,10 @@ header{
 }
 
 .banner h1{
-    color: #ffffff;
-    font-size: 3.5rem;
-    font-family: var(--font-primary);
-    font-weight: 500;
-    text-shadow: .3rem .4rem 2px rgba(0,0,0,0.4);
+    color: #f8f8f2;
+    font-size: 7rem;
+    font-family: var(--font-alternative1);
+    text-shadow: .3rem .4rem 2px #400079;
     line-height: 3.5rem;
     margin-bottom: 2rem;
     opacity: 0;
@@ -134,30 +152,40 @@ header{
 }
 
 .banner p{
-    font-family: var(--font-secundary);
+    font-family: var(--font-alternative);
     color: #fff;
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-shadow: .1rem .1rem  rgba(0,0,0,0.4);
-    margin-bottom: 2rem;   
+    margin-bottom: 2.5rem;   
     opacity: 0;
     animation: moveBanner 1s 0.7s forwards;
+   
 }
 
 .banner button{
     font-family: var(--font-action);
-    color: #fff;
+    color: rgb(247, 242, 242);
+    font-weight: bold;
+    border: 3px solid #400079;
     text-transform: uppercase;
     letter-spacing: .1rem;
+    padding: 0.4rem 1rem;
+    opacity: 0;
+    cursor: pointer;
+    animation: moveBanner 1s 0.9s forwards;
+    background-color: rgba(247, 234, 234, 0.027);  
+    border-radius: 10px; 
+}
+
+
+.banner:hover button{
+    border: none;
     background: #400079;
     background: -webkit-linear-gradient(to left, #4A00E0, #8E2DE2);  
     background: linear-gradient(to left, #4A00E0, #8E2DE2);
-    padding: 0.7rem 1rem;
-    opacity: 0;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    animation: moveBanner 1s 0.9s forwards;
+    padding: 0.5rem 1rem;
 }
+
 
 .banner button:hover{
     opacity: 0.8;       
@@ -181,8 +209,7 @@ header{
     top: 0;
     right: -20rem;
     transition: all 1s;
-    opacity: 0.80;
-    
+    opacity: 0.70;
 }
 
 .show-menu .sidebar{
@@ -198,11 +225,12 @@ header{
 
 .menu-item{
     text-align: center;
-    margin-bottom: .5rem;     
+    margin-bottom: 3rem;     
 }
 
 .menu-link{
     font-family: var(--font-action);
+    font-weight: bold;
     font-size: 2rem;
     color: #000;
     transition: color 0.5s;
@@ -211,7 +239,6 @@ header{
 
 .menu-link:hover{
     color: #4A00E0;
-
 }
 
 .social-media{
@@ -345,7 +372,6 @@ header{
     height: 100%;
     background-color: #262626;
     border-radius: .7rem;
-
 }
 
 .card-img-wrapper img{
@@ -359,7 +385,6 @@ header{
 
 .card:hover .card-img-wrapper img{
     opacity: .1;
-
 }
 
 .card-info{
@@ -412,5 +437,4 @@ header{
     bottom: 2rem;
     opacity: 1;
     visibility: visible;
-
 }
