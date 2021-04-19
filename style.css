@@ -159,7 +159,6 @@ header{
     margin-bottom: 2.5rem;   
     opacity: 0;
     animation: moveBanner 1s 0.7s forwards;
-   
 }
 
 .banner button{
@@ -204,7 +203,7 @@ header{
 .sidebar{
     width: 20rem;
     height: 100vh;
-    background-color: #f5f5f5;
+    background-color: #e7dcdc;
     position: fixed;
     top: 0;
     right: -20rem;
@@ -225,7 +224,14 @@ header{
 
 .menu-item{
     text-align: center;
-    margin-bottom: 3rem;     
+    margin-bottom: 3rem;  
+    width: 20rem;
+}
+
+.menu-item:hover{
+    background: #400079;
+    background: -webkit-linear-gradient(to left, #4A00E0, #8E2DE2);  
+    background: linear-gradient(to left, #4A00E0, #8E2DE2);
 }
 
 .menu-link{
@@ -234,11 +240,12 @@ header{
     font-size: 2rem;
     color: #000;
     transition: color 0.5s;
-    line-height: 3.5rem;
+    line-height: 4rem;
+    width: 20rem;
 }
 
 .menu-link:hover{
-    color: #4A00E0;
+    color: #ffffff;
 }
 
 .social-media{
@@ -363,14 +370,14 @@ header{
 
 .card{
     width: 18rem;
-    height: 25rem;
+    height: 27rem;
     position: relative;
 }
 
 .card-img-wrapper{
     width: 100%;
     height: 100%;
-    background-color: #262626;
+    background-color: #6a389375;
     border-radius: .7rem;
 }
 
@@ -419,9 +426,7 @@ header{
     margin-bottom: 2rem;
 }
 
-.card-info button{
-    width: 8rem;
-    height: 2.5rem;
+.btn{
     background: #400079;
     background: -webkit-linear-gradient(to left, #4A00E0, #8E2DE2);  
     background: linear-gradient(to left, #4A00E0, #8E2DE2);
@@ -430,11 +435,115 @@ header{
     color: #eee;
     border-radius: .5rem;
     border: none;
-    box-shadow: 0 0.1rem .8rem rgba(0, 0, 0, 4);
+    box-shadow: 0 0.1rem .8rem rgba(0, 0, 0, 4);  
+}
+
+.card-info button{
+    width: 8rem;
+    height: 2.5rem;
 }
 
 .card:hover .card-info{
     bottom: 2rem;
     opacity: 1;
     visibility: visible;
+}
+
+.sessao-contato{
+    width: 100%;
+    height: 100vh;
+    background-color: #272727;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6rem;
+}
+
+.contato-wrapper{
+    width: 60%;
+    height: 35rem;
+    display: flex;    
+    box-shadow: 0 2rem 3rem rgba(0,0,0,0.5);
+}
+
+.contato-left{
+    width: 35%;
+    background: 
+        linear-gradient(rgba(15,15,15, 0.6),rgba(22,22,22,0.9)),
+        url(imagens/contato.jpg);
+    background-size: cover;
+}
+
+.contato-right{
+    width: 65%;
+    background-color: #eee;
+    padding: 1rem 3rem 3rem 3rem;  
+}
+
+.sessao-contato h1{
+    width: 100%;
+    text-align: center;
+    font-family: var(--font-primary);
+    counter-reset: #272727;
+    font-size: 3rem;
+    font-weight: lighter;
+}
+
+.sessao-contato form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.input-group{
+    position: relative;
+}
+
+.field{
+    background: transparent;
+    border: none;
+    width: 20rem;
+    font-size: 1.5rem;
+    font-family: var(--font-secundary);
+    border-bottom: 2px dashed #8E2DE2;
+    height: 3rem;
+    outline: none;
+    margin: 2rem 0;
+}
+
+.input-group textarea{
+    padding-top: 1rem;
+    max-width: 20rem;
+    max-height: 4rem;
+
+}
+
+.field-label{
+    position: absolute;
+    left: 0;
+    top: 2rem;
+    font-size: 1.2rem;
+    font-family: var(--font-secundary);
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+.field:focus ~ label{
+    top: 0;
+    font-size: 1rem;
+
+}
+
+.field:focus{
+    border-bottom: 1px solid;
+}
+
+.btn-submit{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    width: 50%;
+    height: 2rem;
 }
